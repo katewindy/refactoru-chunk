@@ -7,8 +7,38 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3">
+				
+			</div>
+			<div class="col-sm-6">
+				<div class="heading">
+					<h1>Super Fabulous Group Maker</h1>
+					<textarea name="" id="nameinput" cols="30" rows="10" autofocus></textarea>
+					<p>Type the names of each group member in the box above, separated by commas.</p>
+					<button class="btn btn-default generategroups">Click to Generate Groups</button>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6">
+				<div class="groupholder">
+					<!-- generated groups go here -->
+				</div>
+			</div>
+			<div class="col-sm-3">
+				
+			</div>
+		</div>
+	</div>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
 	<script src="main.js"></script>
 
 </body>
