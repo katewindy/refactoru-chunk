@@ -7,7 +7,7 @@ $(document).on('ready', function() {
 		console.log(doneChunks);
 		names = randomizer(names);
 		var doneChunks = chunk(names, numChunks);
-		renderGroups(names);
+		renderGroups(doneChunks);
 	});
 });
 
@@ -60,8 +60,12 @@ function randomizer (names) {
 
 function renderGroups (names) {
 	var namesTemp = names;
-	
-
+	for (var i = 0; i < names.length; i++){
+		var temp = names[i];
+		console.log(temp);
+		temp = temp.join(',');
+		$('.groupholder').append($('<p>Group '+ (i+1) + ': ' + temp + '</p>'));
+	}
 }
 
 
